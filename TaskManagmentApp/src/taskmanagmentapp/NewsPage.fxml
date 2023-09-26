@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taskmanager.NewsPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8ebf4" height="700.0" layoutX="67.0" stroke="#f3f4f8" strokeType="INSIDE" width="983.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfaff" height="700.0" layoutX="2.0" stroke="#fbfaff" strokeType="INSIDE" width="65.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="52.0" layoutX="67.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="983.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#8cabcd" height="52.0" layoutX="10.0" layoutY="266.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+      <ImageView fitHeight="60.0" fitWidth="65.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@appLogo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="homeButton" accessibleRole="IMAGE_VIEW" layoutX="10.0" layoutY="121.0" onAction="#homeButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView accessibleRole="BUTTON" fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@apps.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="ReportButton" layoutX="10.0" layoutY="193.0" onAction="#ReportButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="newsButton" layoutX="9.0" layoutY="267.0" onAction="#newsButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@book-alt.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="139.0" layoutY="387.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="117.0" fitWidth="245.0" layoutX="35.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Untit456led.max-1200x1200_L6O6W7l.png" />
+               </image>
+            </ImageView>
+            <Line endX="288.0" endY="88.0" layoutX="-41.0" layoutY="-33.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <Text fill="#5b5d79" layoutX="13.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homeland of a Million Volunteers ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="13.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mar 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="150.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The participation of the Medical Center in the “Homeland of a Million Volunteers 2022” event purpose is to enrich the International Volunteer Day and achieve the Kingdom’s vision of 2022 by interacting with one million volunteers" wrappingWidth="223.41895177960396">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="139.0" layoutY="81.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="108.0" fitWidth="207.0" layoutX="27.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covid-Booster-Dose.max-1200x1200_wzkL15D.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="288.0" endY="88.0" layoutX="-43.0" layoutY="-35.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <Text fill="#5b5d79" layoutX="15.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booster Dose">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="15.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aug 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutX="-1.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="151.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the interest of the Medical Center for the health and safety of the university community and their completion of the vaccination doses against the Coronavirus..." wrappingWidth="223.41895177960396">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="731.0" layoutY="80.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="288.0" endY="88.0" layoutX="-43.0" layoutY="-35.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <ImageView fitHeight="98.0" fitWidth="223.0" layoutX="48.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@U77ntitled.max-1200x1200_pyfFfks.png" />
+               </image>
+            </ImageView>
+            <Text fill="#5b5d79" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raising Awareness of Psychological Health" wrappingWidth="223.4189453125">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="May 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="150.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Medical Center has joined the Psychological health awareness-raising initiative of the National Center for Psychological Health Promotion." wrappingWidth="223.41895177960396">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="436.0" layoutY="80.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="108.0" fitWidth="245.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@default.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="288.0" endY="88.0" layoutX="-43.0" layoutY="-34.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <Text fill="#5b5d79" layoutX="13.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New academic year">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="13.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aug 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutX="-1.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="151.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On the first day of the new academic year, August 28, 2022, the medical center held a welcoming corner for students, congratulating them on the new year and distributing symbolic gifts on this occasion." wrappingWidth="223.41895177960396">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="436.0" layoutY="387.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" layoutX="1.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="288.0" endY="88.0" layoutX="-44.0" layoutY="-33.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <ImageView fitHeight="98.0" fitWidth="188.0" layoutX="36.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WhatsApp_Image_2022-03-24_at_10.56.38_AM_1.max-1200x1200_lCFPqck.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#5b5d79" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Aid and Dealing with Injures">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="15.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fep  2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutX="1.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="153.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A training course entitled “First Aid and How to Deal with the Injured” was provided by the First Aid and Secondary Aid trainer accredited." wrappingWidth="216.4614247737336">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="731.0" layoutY="387.0" prefHeight="277.0" prefWidth="245.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="277.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="245.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="288.0" endY="88.0" layoutX="-43.0" layoutY="-32.0" startX="43.0" startY="88.0" stroke="#e1e1e1" />
+            <ImageView fitHeight="117.0" fitWidth="121.0" layoutX="61.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@78945696.max-1200x1200_5QYcsUY.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#5b5d79" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteers in The Vaccine Center">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#807979" layoutX="17.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Des 2021">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="50.0" fill="#fbfaff" height="39.0" layoutY="238.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="245.0" />
+            <Text layoutX="151.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="READ MORE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Medical Center announced the opportunity for the  volunteer at the Corona Vaccine Center. A group of volunteers from UJ students joined the Corona Vaccine Center, whose number reached (7) ...." wrappingWidth="223.41895177960396">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#768396" layoutX="81.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinic news">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

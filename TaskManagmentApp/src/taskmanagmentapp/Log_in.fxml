@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taskmanager.Log_inController">
+  <children>
+      <Pane prefHeight="700.0" prefWidth="1050.0">
+         <children>
+            <Pane layoutX="1.0" prefHeight="700.0" prefWidth="550.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="702.0" layoutX="-23.0" layoutY="-3.0" stroke="WHITE" strokeDashOffset="30.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="40.0" strokeType="OUTSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="572.0" />
+                  <ImageView fx:id="LoginImg" fitHeight="516.0" fitWidth="500.0" layoutX="25.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Fingerprint-bro.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="552.0" prefHeight="700.0" prefWidth="500.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f6f8" height="700.0" stroke="#f5f6f8" strokeLineCap="ROUND" strokeType="INSIDE" width="500.0" />
+                  <Pane fx:id="passWordPane" layoutX="117.0" layoutY="290.0" prefHeight="70.0" prefWidth="267.0">
+                     <children>
+                        <Label fx:id="passWordLabel" layoutX="10.0" layoutY="12.0" text="Password" textFill="#5f6388">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="passWordIcon" fitHeight="18.0" fitWidth="18.0" layoutX="235.0" layoutY="42.0">
+                           <image>
+                              <Image url="@lock.png" />
+                           </image>
+                        </ImageView>
+                        <JFXPasswordField fx:id="passWord" layoutX="10.0" layoutY="36.0" prefHeight="31.0" prefWidth="253.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="userPane" layoutX="117.0" layoutY="208.0" prefHeight="70.0" prefWidth="267.0">
+                     <children>
+                        <Label fx:id="nameLabel" layoutX="10.0" layoutY="10.0" text="ID" textFill="#5f6388">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="userIcon" fitHeight="18.0" fitWidth="18.0" layoutX="233.0" layoutY="42.0">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField fx:id="userName" layoutX="8.0" layoutY="36.0" prefHeight="31.0" prefWidth="253.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="logoPane" layoutX="25.0" layoutY="36.0" prefHeight="92.0" prefWidth="450.0">
+                     <children>
+                        <Text fx:id="rafd" fill="#48729f" layoutX="109.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rafd">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="uj" fill="#7095bf" layoutX="109.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University of Jeddah COVID-19 Vaccine Center">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="logo" fitHeight="92.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@appLogo.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="6.0" endY="46.0" layoutX="86.0" layoutY="35.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+                     </children>
+                  </Pane>
+                  <Line endX="290.0" endY="46.0" layoutX="142.0" layoutY="472.0" startX="-74.0" startY="46.0" stroke="#e1e1e1" />
+                  <JFXButton fx:id="LogInButton" layoutX="124.0" layoutY="438.0" onAction="#LogInButtonHandler" prefHeight="39.0" prefWidth="253.0" style="-fx-background-color: #5F6388;" text="Log in" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="156.0" layoutY="526.0" text="Are you new here?" textFill="#5f6388" />
+                  <JFXButton fx:id="SignUpButtonPage" layoutX="277.0" layoutY="521.0" onAction="#SignUpButtonPageHandle" text="Sign up" textFill="#4859d3" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+  </children>
+</VBox>

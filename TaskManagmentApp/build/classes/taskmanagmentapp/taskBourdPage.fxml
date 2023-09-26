@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taskmanager.TaskBourdPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8ebf4" height="700.0" layoutX="64.0" layoutY="1.0" stroke="#f3f4f8" strokeType="INSIDE" width="983.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfaff" height="700.0" layoutX="2.0" stroke="#fbfaff" strokeType="INSIDE" width="65.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="52.0" layoutX="67.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="983.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#8cabcd" height="52.0" layoutX="10.0" layoutY="120.0" stroke="WHITE" strokeType="INSIDE" width="50.0" />
+      <ImageView fitHeight="60.0" fitWidth="65.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@appLogo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="homeButton" layoutX="10.0" layoutY="121.0" onAction="#homeButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@apps.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="ReportButton" layoutX="10.0" layoutY="193.0" onAction="#ReportButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@edit.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="newsButton" layoutX="9.0" layoutY="267.0" onAction="#newsButtonHandle" prefHeight="50.0" prefWidth="50.0" ripplerFill="#8dabcc" style="-fx-background-image: C:\Users\Norah\Documents\NetBeansProjects\TaskManager\src\taskmanager;" textFill="TRANSPARENT" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@book-alt.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="700.0" layoutX="774.0" layoutY="2.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="276.0" />
+      <Pane layoutX="114.0" layoutY="110.0" prefHeight="92.0" prefWidth="613.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="613.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect></Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="57.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="374.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label layoutX="10.0" layoutY="11.0" text="Task NO." textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="11.0" text="Task name" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#fbfaff" height="92.0" layoutX="491.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="122.0" />
+            <JFXCheckBox fx:id="completingCheck" checkedColor="#69a48c" layoutX="584.0" layoutY="36.0" prefHeight="20.0" prefWidth="30.0" text="." textFill="TRANSPARENT" />
+            <Label layoutX="503.0" layoutY="10.0" text="Start from" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="49.0" text="End at" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="11.0" text="Task discribtion" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasknum" layoutX="19.0" layoutY="37.0" text="1001">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="11.0" text="Task status" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="6.0" endY="46.0" layoutX="125.0" layoutY="39.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label fx:id="TaskStatus" layoutX="423.0" layoutY="34.0" text="Label">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="startDate" layoutX="524.0" layoutY="29.0" text="12/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="endDate" layoutX="524.0" layoutY="64.0" text="16/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Text layoutX="84.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="147.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track your team’s best practices by keeping clear records of what, who, and when things got done." wrappingWidth="228.2822265625">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="780.0" layoutY="7.0" prefHeight="691.0" prefWidth="264.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcff" height="691.0" layoutY="-1.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="264.0" />
+            <ImageView fitHeight="129.0" fitWidth="147.0" layoutX="68.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user%20(1).png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="6.0" layoutY="394.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="252.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="203.0" layoutX="6.0" layoutY="475.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="252.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="6.0" layoutY="316.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="252.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="84.0" layoutY="239.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="170.0" layoutY="238.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="28.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-list-view-64.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="116.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-medals-64.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="34.0" layoutX="204.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-clock-64.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Label layoutX="20.0" layoutY="246.0" text="NO.event" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="246.0" text="Medal" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="245.0" text="Volunteer hour" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="323.0" text="Event name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="345.0" text="Covid-19 vaccination center" textFill="#727579">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="401.0" text="Supervisor name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Sname" layoutX="18.0" layoutY="425.0" text="Label" textFill="#727579">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="486.0" text="Team members">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="TM1" layoutX="19.0" layoutY="545.0" text="Label" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="Vname" layoutX="110.0" layoutY="165.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="143.0" endY="46.0" layoutX="106.0" layoutY="491.0" startX="-90.33331298828125" startY="46.0" stroke="#e1e1e1" />
+            <Label fx:id="TM2" layoutX="19.0" layoutY="579.0" text="Label" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Line endX="143.0" endY="46.0" layoutX="106.0" layoutY="525.0" startX="-90.33331298828125" startY="46.0" stroke="#e1e1e1" />
+            <Line endX="143.0" endY="46.0" layoutX="107.0" layoutY="559.0" startX="-90.33331298828125" startY="46.0" stroke="#e1e1e1" />
+            <Label fx:id="TM3" layoutX="19.0" layoutY="614.0" text="Label" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Line endX="143.0" endY="46.0" layoutX="107.0" layoutY="594.0" startX="-90.33331298828125" startY="46.0" stroke="#e1e1e1" />
+            <Label fx:id="TM4" layoutX="19.0" layoutY="650.0" text="Label" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="263.0" text="7" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="262.0" text="Selvir" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="213.0" layoutY="262.0" text="57" textFill="#727579">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Text fill="#232360" layoutX="118.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#768396" layoutX="82.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Pane layoutX="114.0" layoutY="222.0" prefHeight="92.0" prefWidth="613.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="613.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="57.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="374.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label layoutX="10.0" layoutY="11.0" text="Task NO." textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="11.0" text="Task name" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#fbfaff" height="92.0" layoutX="491.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="122.0" />
+            <JFXCheckBox fx:id="completingCheck2" checkedColor="#69a48c" layoutX="584.0" layoutY="36.0" prefHeight="20.0" prefWidth="30.0" text="." textFill="TRANSPARENT" />
+            <Label layoutX="503.0" layoutY="10.0" text="Start from" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="49.0" text="End at" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="11.0" text="Task discribtion" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasknum2" layoutX="19.0" layoutY="37.0" text="1002">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="11.0" text="Task status" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="6.0" endY="46.0" layoutX="125.0" layoutY="39.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label fx:id="TaskStatus2" layoutX="423.0" layoutY="34.0" text="Label">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="startDate2" layoutX="524.0" layoutY="29.0" text="12/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="endDate2" layoutX="524.0" layoutY="64.0" text="16/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Text layoutX="74.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event logistics " textAlignment="CENTER" wrappingWidth="46.6503937728703">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="focuses on the logistics of the event itself including planning and management of technical and logistical support services to ensure the seamless execution of an event." wrappingWidth="220.52732706069946">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="114.0" layoutY="333.0" prefHeight="92.0" prefWidth="613.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="613.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="57.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="374.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label layoutX="10.0" layoutY="11.0" text="Task NO." textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="11.0" text="Task name" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#fbfaff" height="92.0" layoutX="491.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="122.0" />
+            <JFXCheckBox fx:id="completingCheck3" checkedColor="#69a48c" layoutX="584.0" layoutY="36.0" prefHeight="20.0" prefWidth="30.0" text="." textFill="TRANSPARENT" />
+            <Label layoutX="503.0" layoutY="10.0" text="Start from" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="49.0" text="End at" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="11.0" text="Task discribtion" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasknum3" layoutX="19.0" layoutY="37.0" text="1003">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="11.0" text="Task status" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="6.0" endY="46.0" layoutX="125.0" layoutY="39.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label fx:id="TaskStatus3" layoutX="423.0" layoutY="34.0" text="Label">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="startDate3" layoutX="524.0" layoutY="29.0" text="13/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="endDate3" layoutX="524.0" layoutY="64.0" text="13/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Text layoutX="68.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Technical Services" textAlignment="CENTER" wrappingWidth="55.98048269748688">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="149.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter all the details related to the team from the beginning of its formation to the division and assignment of tasks." wrappingWidth="220.52732706069946">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="114.0" layoutY="445.0" prefHeight="92.0" prefWidth="613.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="613.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="57.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="374.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label layoutX="10.0" layoutY="11.0" text="Task NO." textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="11.0" text="Task name" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#fbfaff" height="92.0" layoutX="491.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="122.0" />
+            <JFXCheckBox fx:id="completingCheck4" checkedColor="#69a48c" layoutX="584.0" layoutY="36.0" prefHeight="20.0" prefWidth="30.0" text="." textFill="TRANSPARENT" />
+            <Label layoutX="503.0" layoutY="10.0" text="Start from" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="49.0" text="End at" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="11.0" text="Task discribtion" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasknum4" layoutX="19.0" layoutY="37.0" text="1004">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="11.0" text="Task status" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="6.0" endY="46.0" layoutX="125.0" layoutY="39.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label fx:id="TaskStatus2" layoutX="423.0" layoutY="34.0" text="Label">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="startDate4" layoutX="524.0" layoutY="29.0" text="14/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="endDate4" layoutX="524.0" layoutY="64.0" text="14/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Text layoutX="69.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health  Services" textAlignment="CENTER" wrappingWidth="56.76560997962952">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="149.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="provide health services such as giving vaccinations, helping patients" wrappingWidth="210.72265625">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="114.0" layoutY="558.0" prefHeight="92.0" prefWidth="613.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="613.0">
+               <effect>
+                  <DropShadow color="#0000002b" />
+               </effect>
+            </Rectangle>
+            <Line endX="6.0" endY="46.0" layoutX="57.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Line endX="6.0" endY="46.0" layoutX="374.0" layoutY="38.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label layoutX="10.0" layoutY="11.0" text="Task NO." textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="11.0" text="Task name" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#fbfaff" height="92.0" layoutX="491.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="122.0" />
+            <JFXCheckBox fx:id="completingCheck5" checkedColor="#69a48c" layoutX="584.0" layoutY="36.0" prefHeight="20.0" prefWidth="30.0" text="." textFill="TRANSPARENT" />
+            <Label layoutX="503.0" layoutY="10.0" text="Start from" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="49.0" text="End at" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="11.0" text="Task discribtion" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasknum5" layoutX="19.0" layoutY="37.0" text="1005">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="388.0" layoutY="11.0" text="Task status" textFill="#23235f">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Line endX="6.0" endY="46.0" layoutX="125.0" layoutY="39.0" startX="6.0" startY="-28.0" stroke="#e1e1e1" />
+            <Label fx:id="TaskStatus5" layoutX="423.0" layoutY="34.0" text="Label">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="startDate5" layoutX="524.0" layoutY="29.0" text="15/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="endDate5" layoutX="524.0" layoutY="64.0" text="16/10">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="16.0" layoutX="504.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@calendar-pen.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.57" />
+               </effect>
+            </ImageView>
+            <Text layoutX="75.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health  Services" textAlignment="CENTER" wrappingWidth="39.99999761581421">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="provide health services such as giving vaccinations, helping patients" wrappingWidth="210.72265625">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>
